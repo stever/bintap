@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <io.h>
+#include <stdio.h>
 #include <string.h>
 #include "bintap.h"
 
@@ -18,15 +18,15 @@ void main(int argc, char *argv[])
     unsigned int fl;
     BYTE high,low;
 
-    printf("\n\nBINTAP version 1.0\n");
+    printf("BINTAP version 1.0\n");
     printf("Written by the infamous BLOOD! (l.d.tonks@bra0202.wins.icl.co.uk)\n");
     printf("(C)1996 Cheese Freak Software\n");
     printf("This program is FREEWARE! Don't pay more than 2p for it!\n\n");
     
     if(argc!=5)
     {
-        printf("Usage : BINTAP <bin. filename> <.tap filename> <speccy filename> <.org address>\n");
-        printf("Example : BINTAP jetset.obj jetset.tap jetset 32000\n\n");
+        printf("Usage : bintap <bin. filename> <.tap filename> <speccy filename> <.org address>\n");
+        printf("Example : bintap jetset.obj jetset.tap jetset 32000\n\n");
         exit(0);
     }
     else
